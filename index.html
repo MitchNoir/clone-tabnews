@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studio Noir — Ideias em movimento</title>
+  <meta name="description" content="Uma landing page de teste interno para o Studio Noir.">
+  <style>
+    :root{--ink:#17171c;--muted:#6d6d78;--paper:#f7f4ef;--accent:#ef6f51;--line:#ded9d1;--card:#fffdfa}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{padding:22px 0;display:flex;justify-content:space-between;align-items:center}.brand{font-weight:800;letter-spacing:-.03em}.brand span{color:var(--accent)}
+    nav{display:flex;gap:24px;color:var(--muted);font-size:14px}nav a:hover{color:var(--ink)}
+    .hero{padding:92px 0 110px;display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+    .eyebrow{color:var(--accent);font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.hero h1{font-size:clamp(48px,7vw,86px);line-height:.98;letter-spacing:-.075em;max-width:720px;margin:18px 0 26px}.hero p{max-width:540px;color:var(--muted);font-size:19px}
+    .actions{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:13px 20px;font-weight:700;border:1px solid var(--ink)}.button.primary{background:var(--ink);color:#fff}.button.secondary{border-color:var(--line);color:var(--muted)}
+    .orb{aspect-ratio:1;border-radius:42% 58% 60% 40%/45% 40% 60% 55%;background:linear-gradient(145deg,#ffc29e 0%,#ef6f51 48%,#4d3159 100%);position:relative;overflow:hidden;box-shadow:25px 25px 0 rgba(23,23,28,.08)}.orb:after{content:"";position:absolute;inset:16%;border:1px solid rgba(255,255,255,.65);border-radius:50%;transform:rotate(28deg)}.orb:before{content:"NOIR";position:absolute;right:10%;bottom:12%;color:rgba(255,255,255,.9);font-weight:900;font-size:clamp(26px,4vw,54px);letter-spacing:-.08em;transform:rotate(-12deg)}
+    .section{padding:76px 0;border-top:1px solid var(--line)}.section-heading{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:32px}.section h2{font-size:clamp(30px,4vw,48px);letter-spacing:-.06em;margin:0}.section-heading p{color:var(--muted);max-width:360px;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:25px;min-height:190px}.card .num{color:var(--accent);font-weight:800}.card h3{margin:34px 0 8px;font-size:21px;letter-spacing:-.03em}.card p{margin:0;color:var(--muted)}
+    .cta{background:var(--ink);color:#fff;border-radius:28px;padding:42px;display:flex;justify-content:space-between;gap:30px;align-items:center}.cta p{color:#bab8c0;max-width:440px}.cta .button{border-color:#fff;color:#fff}
+    footer{padding:28px 0 42px;display:flex;justify-content:space-between;color:var(--muted);font-size:13px}
+    @media(max-width:800px){nav{display:none}.hero{grid-template-columns:1fr;padding:56px 0 76px;gap:38px}.orb{max-width:470px;width:100%;margin:auto}.grid{grid-template-columns:1fr}.section-heading,.cta,footer{display:block}.section-heading p{margin-top:12px}.cta .button{margin-top:18px}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <a class="brand" href="#">studio<span>noir</span>.</a>
+    <nav aria-label="Navegação"><a href="#sobre">Sobre</a><a href="#processo">Processo</a><a href="#contato">Contato</a></nav>
+  </header>
+  <main>
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow">Teste interno · 2026</div>
+        <h1>Ideias simples. Presença marcante.</h1>
+        <p>Uma página experimental para apresentar projetos, produtos e possibilidades com clareza — e um pouco mais de personalidade.</p>
+        <div class="actions"><a class="button primary" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a><a class="button secondary" href="#processo">Ver como funciona</a></div>
+      </div>
+      <div class="orb" aria-label="Forma abstrata em tons de coral e roxo" role="img"></div>
+    </section>
+    <section class="section" id="sobre"><div class="wrap section-heading"><h2>Feito para sair do rascunho.</h2><p>Do primeiro insight até uma experiência pronta para ser testada com pessoas de verdade.</p></div></section>
+    <section class="section" id="processo"><div class="wrap"><div class="section-heading"><h2>Um processo leve.</h2><p>Menos reuniões sobre o trabalho. Mais trabalho que faz sentido.</p></div><div class="grid">
+      <article class="card"><div class="num">01</div><h3>Escuta</h3><p>Entendemos o contexto, a ambição e o que precisa mudar.</p></article>
+      <article class="card"><div class="num">02</div><h3>Direção</h3><p>Transformamos possibilidades em uma ideia clara e testável.</p></article>
+      <article class="card"><div class="num">03</div><h3>Entrega</h3><p>Construímos a primeira versão e aprendemos com o uso real.</p></article>
+    </div></div></section>
+    <section class="section" id="contato"><div class="wrap"><div class="cta"><div><div class="eyebrow">Próximo passo</div><h2>Tem uma ideia na cabeça?</h2><p>Este botão é apenas demonstrativo — mas a vontade de criar pode ser bem real.</p></div><a class="button" href="mailto:hello@example.com">Enviar mensagem ↗</a></div></div></section>
+  </main>
+  <footer class="wrap"><span>© 2026 Studio Noir</span><span>Landing page experimental</span></footer>
+</body>
+</html>
